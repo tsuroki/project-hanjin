@@ -2,6 +2,96 @@
 /* font-weight */
 /* color */
 /* include */
+#wrap .main-bnr {
+  position: relative;
+}
+#wrap .main-bnr .bnr-prev {
+  width: 36px;
+  height: 36px;
+}
+#wrap .main-bnr .bnr-prev > svg {
+  fill: rgba(0, 0, 0, 0.4);
+}
+#wrap .main-bnr .bnr-next {
+  fill: rgba(0, 0, 0, 0.4);
+  width: 36px;
+  height: 36px;
+}
+#wrap .main-bnr .bnr-next > svg {
+  fill: rgba(0, 0, 0, 0.4);
+}
+#wrap .main-bnr .bnr-nav {
+  color: #ffffff;
+  font-size: 0.875rem;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  width: fit-content;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 6px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#wrap .main-bnr .bnr-nav .swiper-pagination-current {
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+#wrap .main-bnr .bnr-nav .swiper-pagination-total {
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+#wrap .main-bnr .bnr-wrapper > .swiper-slide::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #222222 0%, transparent 50%);
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+#wrap .main-bnr .bnr-wrapper > .swiper-slide {
+  padding: 0 240px;
+  height: 670px;
+  width: 100%;
+  background-image: url(../images/background/bnr1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#wrap .main-bnr .bnr-wrapper > .swiper-slide > a .bnr-title {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#wrap .main-bnr .bnr-wrapper > .swiper-slide > a .bnr-title > h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+#wrap .main-bnr .bnr-wrapper > .swiper-slide > a .bnr-title > p {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+#wrap .main-bnr .bnr-wrapper > .swiper-slide > a .bnr-title .detail {
+  padding: 10px 20px;
+  background-color: #2C8CE8;
+  border-radius: 20px;
+  width: fit-content;
+}
+#wrap .main-bnr .bnr-wrapper > .swiper-slide > a .bnr-title .detail > span {
+  color: #ffffff;
+  margin-right: 10px;
+}
+#wrap .main-bnr .bnr-wrapper > .swiper-slide > a .bnr-title .detail > img {
+  width: 14px;
+  height: 14px;
+  transform: translateY(1px);
+}
+
 body .linebnr {
   position: relative;
   width: 100%;
