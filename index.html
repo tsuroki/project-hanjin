@@ -8,11 +8,9 @@
     <!-- pretendard 웹폰트 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <!-- swiper-css-cdn -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="shortcut icon" href="./images/hanjin/hanjin-icon.png" type="image/x-icon">
     <title>한진관광 | 여행의 새로운 지표를 열다</title>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./scripts/index.js" defer></script>
     <script src="./scripts/swiper-js.js" defer></script>
@@ -34,7 +32,17 @@
     </div>
     <header id="header">
         <div class="header-topcon">
-            <h1><a href="#"><img src="./images/hanjin/korean-logo.gif" alt=""></a></h1>
+            <a class="sidemenu" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_116_2474" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                        <rect width="24" height="24" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_116_2474)">
+                        <path d="M4 7V6H20V7H4ZM4 18V17H20V18H4ZM4 12.5V11.5H20V12.5H4Z" fill="#222222"/>
+                    </g>
+                </svg>
+            </a>
+            <h1><a href="#"><img src="./images/hanjin/korean-logo.gif" alt="#"></a></h1>
             <div class="header-icon">
                 <div class="search">
                     <input type="text" id="search-box" class="search-inp" name="search-word" placeholder="검색어를 입력해주세요">
@@ -55,7 +63,7 @@
                             <rect width="30" height="30" fill="#D9D9D9"/>
                         </mask>
                         <g mask="url(#mask0_48_1401)">
-                            <path d="M7.74531 21.8556C8.80781 21.0912 9.93521 20.4868 11.1275 20.0422C12.3198 19.5974 13.6106 19.375 15 19.375C16.3894 19.375 17.6802 19.5974 18.8725 20.0422C20.0648 20.4868 21.1922 21.0912 22.2547 21.8556C23.0801 21.0015 23.744 19.9927 24.2463 18.8294C24.7488 17.6658 25 16.3894 25 15C25 12.2292 24.026 9.86979 22.0781 7.92188C20.1302 5.97396 17.7708 5 15 5C12.2292 5 9.86979 5.97396 7.92188 7.92188C5.97396 9.86979 5 12.2292 5 15C5 16.3894 5.25125 17.6658 5.75375 18.8294C6.25604 19.9927 6.9199 21.0015 7.74531 21.8556ZM15.0006 15.625C13.9473 15.625 13.0589 15.2634 12.3353 14.5403C11.6118 13.8172 11.25 12.929 11.25 11.8756C11.25 10.8223 11.6116 9.93385 12.3347 9.21031C13.0578 8.48677 13.946 8.125 14.9994 8.125C16.0527 8.125 16.9411 8.48656 17.6647 9.20969C18.3882 9.93281 18.75 10.821 18.75 11.8744C18.75 12.9277 18.3884 13.8161 17.6653 14.5397C16.9422 15.2632 16.054 15.625 15.0006 15.625ZM15 26.25C13.431 26.25 11.9623 25.9579 10.5938 25.3738C9.22521 24.7896 8.03448 23.9911 7.02156 22.9784C6.00885 21.9655 5.21042 20.7748 4.62625 19.4063C4.04208 18.0377 3.75 16.569 3.75 15C3.75 13.431 4.04208 11.9623 4.62625 10.5938C5.21042 9.22521 6.00885 8.03448 7.02156 7.02156C8.03448 6.00885 9.22521 5.21042 10.5938 4.62625C11.9623 4.04208 13.431 3.75 15 3.75C16.569 3.75 18.0377 4.04208 19.4063 4.62625C20.7748 5.21042 21.9655 6.00885 22.9784 7.02156C23.9911 8.03448 24.7896 9.22521 25.3738 10.5938C25.9579 11.9623 26.25 13.431 26.25 15C26.25 16.569 25.9579 18.0377 25.3738 19.4063C24.7896 20.7748 23.9911 21.9655 22.9784 22.9784C21.9655 23.9911 20.7748 24.7896 19.4063 25.3738C18.0377 25.9579 16.569 26.25 15 26.25ZM15 25C16.1523 25 17.2861 24.7984 18.4016 24.3953C19.5168 23.9924 20.4806 23.4407 21.2931 22.7403C20.4806 22.088 19.5407 21.5724 18.4734 21.1934C17.4061 20.8145 16.2483 20.625 15 20.625C13.7517 20.625 12.5898 20.8105 11.5144 21.1816C10.4392 21.5526 9.50333 22.0722 8.70687 22.7403C9.51937 23.4407 10.4832 23.9924 11.5984 24.3953C12.7139 24.7984 13.8477 25 15 25ZM15 14.375C15.7019 14.375 16.2941 14.1339 16.7766 13.6516C17.2589 13.1691 17.5 12.5769 17.5 11.875C17.5 11.1731 17.2589 10.5809 16.7766 10.0984C16.2941 9.61615 15.7019 9.375 15 9.375C14.2981 9.375 13.7059 9.61615 13.2234 10.0984C12.7411 10.5809 12.5 11.1731 12.5 11.875C12.5 12.5769 12.7411 13.1691 13.2234 13.6516C13.7059 14.1339 14.2981 14.375 15 14.375Z" fill="black"/>
+                            <path d="M7.74531 21.8556C8.80781 21.0912 9.93521 20.4868 11.1275 20.0422C12.3198 19.5974 13.6106 19.375 15 19.375C16.3894 19.375 17.6802 19.5974 18.8725 20.0422C20.0648 20.4868 21.1922 21.0912 22.2547 21.8556C23.0801 21.0015 23.744 19.9927 24.2463 18.8294C24.7488 17.6658 25 16.3894 25 15C25 12.2292 24.026 9.86979 22.0781 7.92188C20.1302 5.97396 17.7708 5 15 5C12.2292 5 9.86979 5.97396 7.92188 7.92188C5.97396 9.86979 5 12.2292 5 15C5 16.3894 5.25125 17.6658 5.75375 18.8294C6.25604 19.9927 6.9199 21.0015 7.74531 21.8556ZM15.0006 15.625C13.9473 15.625 13.0589 15.2634 12.3353 14.5403C11.6118 13.8172 11.25 12.929 11.25 11.8756C11.25 10.8223 11.6116 9.93385 12.3347 9.21031C13.0578 8.48677 13.946 8.125 14.9994 8.125C16.0527 8.125 16.9411 8.48656 17.6647 9.20969C18.3882 9.93281 18.75 10.821 18.75 11.8744C18.75 12.9277 18.3884 13.8161 17.6653 14.5397C16.9422 15.2632 16.054 15.625 15.0006 15.625ZM15 26.25C13.431 26.25 11.9623 25.9579 10.5938 25.3738C9.22521 24.7896 8.03448 23.9911 7.02156 22.9784C6.00885 21.9655 5.21042 20.7748 4.62625 19.4063C4.04208 18.0377 3.75 16.569 3.75 15C3.75 13.431 4.04208 11.9623 4.62625 10.5938C5.21042 9.22521 6.00885 8.03448 7.02156 7.02156C8.03448 6.00885 9.22521 5.21042 10.5938 4.62625C11.9623 4.04208 13.431 3.75 15 3.75C16.569 3.75 18.0377 4.04208 19.4063 4.62625C20.7748 5.21042 21.9655 6.00885 22.9784 7.02156C23.9911 8.03448 24.7896 9.22521 25.3738 10.5938C25.9579 11.9623 26.25 13.431 26.25 15C26.25 16.569 25.9579 18.0377 25.3738 19.4063C24.7896 20.7748 23.9911 21.9655 22.9784 22.9784C21.9655 23.9911 20.7748 24.7896 19.4063 25.3738C18.0377 25.9579 16.569 26.25 15 26.25ZM15 25C16.1523 25 17.2861 24.7984 18.4016 24.3953C19.5168 23.9924 20.4806 23.4407 21.2931 22.7403C20.4806 22.088 19.5407 21.5724 18.4734 21.1934C17.4061 20.8145 16.2483 20.625 15 20.625C13.7517 20.625 12.5898 20.8105 11.5144 21.1816C10.4392 21.5526 9.50333 22.0722 8.70687 22.7403C9.51937 23.4407 10.4832 23.9924 11.5984 24.3953C12.7139 24.7984 13.8477 25 15 25ZM15 14.375C15.7019 14.375 16.2941 14.1339 16.7766 13.6516C17.2589 13.1691 17.5 12.5769 17.5 11.875C17.5 11.1731 17.2589 10.5809 16.7766 10.0984C16.2941 9.61615 15.7019 9.375 15 9.375C14.2981 9.375 13.7059 9.61615 13.2234 10.0984C12.7411 10.5809 12.5 11.1731 12.5 11.875C12.5 12.5769 12.7411 13.1691 13.2234 13.6516C13.7059 14.1339 14.2981 14.375 15 14.375Z"/>
                         </g>
                     </svg>
                 </a>
@@ -86,7 +94,9 @@
                 <span class="hr"></span>
                 <div class="swiper notice-swiper">
                     <div class="swiper-wrapper notice-wrapper">
-                        <p class="swiper-slide notice1"><a href="#">인생 버킷리스트 이집트로…한진관광, '대한항공 이집트 전세기' 오픈</a></p>
+                        <div class="swiper-slide notice1"><a href="#">인생 버킷리스트 이집트로…한진관광, '대한항공 이집트 전세기' 오픈</a></div>
+                        <div class="swiper-slide notice2"><a href="#">인생 버킷리스트 이집트로…한진관광, '대한항공 이집트 전세기' 오픈</a></div>
+                        <div class="swiper-slide notice3"><a href="#">인생 버킷리스트 이집트로…한진관광, '대한항공 이집트 전세기' 오픈</a></div>
                     </div>
                 </div>
             </div>
@@ -169,16 +179,128 @@
                         <span class="more">특가 더 보기<img src="./images/icon/arrow-14px.png" alt="#"></span></p>
                 </div>
                 <div class="swiper special-swiper">
-                    <div class="special-nav">
-                        <div class="swiper-pagination special-bar"><!-- progress --></div>
-                        <div class="special-btn">
-                            <div class="swiper-button-prev special-prev"></div>
-                            <div class="swiper-button-next special-next"></div>
+                    <div class="swiper-pagination special-bar"><!-- progress --></div>
+                    <div class="special-btn">
+                        <div class="swiper-button-next special-next">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_58_31" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                                    <rect width="30" height="30" fill="#D9D9D9"/>
+                                </mask>
+                                <g mask="url(#mask0_58_31)">
+                                    <path d="M11.0701 5.24902L20.4934 14.624L11.0701 23.999L9.99341 22.9278L18.34 14.624L9.99341 6.32021L11.0701 5.24902Z" fill="#222222"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-prev special-prev">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_58_28" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                                    <rect width="30" height="30" fill="#D9D9D9"/>
+                                </mask>
+                            <g mask="url(#mask0_58_28)">
+                                <path d="M19.4167 23.999L9.99341 14.624L19.4167 5.24902L20.4934 6.32021L12.1468 14.624L20.4934 22.9278L19.4167 23.999Z" fill="#222222"/>
+                            </g>
+                            </svg>
                         </div>
                     </div>
                     <div class="special-wrapper swiper-wrapper">
                         <!-- 1번 그룹슬라이드 -->
                         <ul class="swiper-slide group1">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/hanjin_product_Image/special/janggagye.jpg" alt="">
+                                    <div class="brand">
+                                        <span>대한항공</span>
+                                    </div>
+                                    <p class="name">장가계 | 원가계 5일<br>
+                                    [준특급호텔 | 천문산 | 리무진 버스]</p>
+                                    <p class="price"><em>591,000원 ~</em></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/hanjin_product_Image/special/naiagara.jpg" alt="">
+                                    <div class="brand">
+                                        <span>대한항공</span>
+                                        <span>|</span>
+                                        <span>아시아나 항공</span>
+                                    </div>
+                                    <p class="name">미동부 나이아가라 8일 <br>
+                                    [2인 출발 | 나이아가라 2박 | 귀국일 연장]</p>
+                                    <p class="price"><em>3,140,400원 ~</em></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/hanjin_product_Image/special/sydney.jpg" alt="">
+                                    <div class="brand">
+                                        <span>아시아나항공</span>
+                                    </div>
+                                    <p class="name">호주 시드니 핵심일주 6일<br>
+                                    [전 일정 준특급호텔 | 블루 마운틴 | 오페라 내부]</p>
+                                    <p class="price"><em>1,840,400원 ~</em></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/hanjin_product_Image/special/nagoya.jpg" alt="">
+                                    <div class="brand">
+                                        <span>진에어</span>
+                                    </div>
+                                    <p class="name">아름다운 자연에서 만끽하는 힐링, 나고야 <br>
+                                    [가미코치 | 신호타카 로프웨이]</p>
+                                    <p class="price"><em>1,070,900원 ~</em></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide group2">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/hanjin_product_Image/special/janggagye.jpg" alt="">
+                                    <div class="brand">
+                                        <span>대한항공</span>
+                                    </div>
+                                    <p class="name">장가계 | 원가계 5일<br>
+                                    [준특급호텔 | 천문산 | 리무진 버스]</p>
+                                    <p class="price"><em>591,000원 ~</em></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/hanjin_product_Image/special/naiagara.jpg" alt="">
+                                    <div class="brand">
+                                        <span>대한항공</span>
+                                        <span>|</span>
+                                        <span>아시아나 항공</span>
+                                    </div>
+                                    <p class="name">미동부 나이아가라 8일 <br>
+                                    [2인 출발 | 나이아가라 2박 | 귀국일 연장]</p>
+                                    <p class="price"><em>3,140,400원 ~</em></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/hanjin_product_Image/special/sydney.jpg" alt="">
+                                    <div class="brand">
+                                        <span>아시아나항공</span>
+                                    </div>
+                                    <p class="name">호주 시드니 핵심일주 6일<br>
+                                    [전 일정 준특급호텔 | 블루 마운틴 | 오페라 내부]</p>
+                                    <p class="price"><em>1,840,400원 ~</em></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/hanjin_product_Image/special/nagoya.jpg" alt="">
+                                    <div class="brand">
+                                        <span>진에어</span>
+                                    </div>
+                                    <p class="name">아름다운 자연에서 만끽하는 힐링, 나고야 <br>
+                                    [가미코치 | 신호타카 로프웨이]</p>
+                                    <p class="price"><em>1,070,900원 ~</em></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide group3">
                             <li>
                                 <a href="#">
                                     <img src="./images/hanjin_product_Image/special/janggagye.jpg" alt="">
@@ -238,7 +360,7 @@
                     <div class="theme-row">
                         <span class="text">여행의 새로운 영감, 색다른 여행을 위하여</span>
                         <ul class="lnb-list">
-                            <li><a href="#">스포츠</a></li>
+                            <li class="active"><a href="#">스포츠</a></li>
                             <li><a href="#">미식과 주</a></li>
                             <li><a href="#">예술여행</a></li>
                             <li><a href="#">역사와 문명</a></li>
@@ -253,11 +375,27 @@
                     </div>
                 </div>
                 <div class="swiper theme-swiper">
-                    <div class="theme-nav">
-                        <div class="swiper-pagination theme-bar"><!-- progress --></div>
-                        <div class="theme-btn">
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination theme-bar"><!-- progress --></div>
+                    <div class="theme-btn">
+                        <div class="swiper-button-next theme-next">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_58_31" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                                    <rect width="30" height="30" fill="#D9D9D9"/>
+                                </mask>
+                                <g mask="url(#mask0_58_31)">
+                                    <path d="M11.0701 5.24902L20.4934 14.624L11.0701 23.999L9.99341 22.9278L18.34 14.624L9.99341 6.32021L11.0701 5.24902Z" fill="#222222"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-prev theme-prev">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_58_28" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                                    <rect width="30" height="30" fill="#D9D9D9"/>
+                                </mask>
+                            <g mask="url(#mask0_58_28)">
+                                <path d="M19.4167 23.999L9.99341 14.624L19.4167 5.24902L20.4934 6.32021L12.1468 14.624L20.4934 22.9278L19.4167 23.999Z" fill="#222222"/>
+                            </g>
+                            </svg>
                         </div>
                     </div>
                     <div class="theme-wrapper swiper-wrapper">
@@ -308,10 +446,10 @@
                             </li>
                         </ul>
                         <!-- 2번 그룹슬라이드 -->
-                        <ul class="swiper-slide group2">
+                        <ul class="swiper-slide group1">
                             <li>
                                 <a href="#">
-                                    <img src="#" alt="">
+                                    <img src="./images/hanjin_product_Image/theme/goldcost-1.jpg" alt="#">
                                     <div class="brand">
                                         <span>대한항공</span>
                                     </div>
@@ -321,7 +459,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="#" alt="">
+                                    <img src="./images/hanjin_product_Image/theme/great-ocean.jpg" alt="#">
                                     <div class="brand">
                                         <span>아시아나항공</span>
                                     </div>
@@ -332,7 +470,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="#" alt="">
+                                    <img src="./images/hanjin_product_Image/theme/dolomity.jpg" alt="#">
                                     <div class="brand">
                                         <span>대한항공</span>
                                     </div>
@@ -343,53 +481,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="" alt="">
-                                    <div class="brand">
-                                        <span>진에어</span>
-                                    </div>
-                                    <p class="name">산티아고 순례길 스페인&포르투칼 240Km<br>
-                                        [해안길 | 호텔숙박 | 무시아방문 | 파티마대성당]</p>
-                                    <p class="price"><em>6,190,000원 ~</em></p>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- 3번 그룹슬라이드 -->
-                        <ul class="swiper-slide group3">
-                            <li>
-                                <a href="#">
-                                    <img src="#" alt="">
-                                    <div class="brand">
-                                        <span>대한항공</span>
-                                    </div>
-                                    <p class="name">꿈의 기록 달성 패키지 6일<br>[호주 시드니 | 골드코스트]</p>
-                                    <p class="price"><em>2,734,000원 ~</em></p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="#" alt="">
-                                    <div class="brand">
-                                        <span>아시아나항공</span>
-                                    </div>
-                                    <p class="name">호주 시드니 | 멜버른 일주 6일 <br>
-                                    [블루마운틴 | 그레이트오션로드]</p>
-                                    <p class="price"><em>4,342,000원 ~</em></p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="#" alt="">
-                                    <div class="brand">
-                                        <span>대한항공</span>
-                                    </div>
-                                    <p class="name">세상에서 가장 아름다운 자연물 돌로미티<br>
-                                        [돌로미티 | 하이킹 | 9일]</p>
-                                    <p class="price"><em>8,949,000원 ~</em></p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
+                                    <img src="./images/hanjin_product_Image/theme/spain-portugish.jpg" alt="#">
                                     <div class="brand">
                                         <span>진에어</span>
                                     </div>
@@ -419,6 +511,29 @@
                 </div>
                 <div class="bizpack-list">
                     <div class="swiper bizpack-swiper">
+                        <div class="swiper-pagination bizpack-bar"><!-- progress --></div>
+                        <div class="theme-btn">
+                            <div class="swiper-button-next bizpack-next">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_58_31" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                                        <rect width="30" height="30" fill="#D9D9D9"/>
+                                    </mask>
+                                    <g mask="url(#mask0_58_31)">
+                                        <path d="M11.0701 5.24902L20.4934 14.624L11.0701 23.999L9.99341 22.9278L18.34 14.624L9.99341 6.32021L11.0701 5.24902Z" fill="#222222"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-prev bizpack-prev">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_58_28" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                                        <rect width="30" height="30" fill="#D9D9D9"/>
+                                    </mask>
+                                <g mask="url(#mask0_58_28)">
+                                    <path d="M19.4167 23.999L9.99341 14.624L19.4167 5.24902L20.4934 6.32021L12.1468 14.624L20.4934 22.9278L19.4167 23.999Z" fill="#222222"/>
+                                </g>
+                                </svg>
+                            </div>
+                        </div>
                         <div class="swiper-wrapper bizpack-wrapper">
                             <ul class="swiper-slide bizpack-slide1">
                                 <li>
@@ -457,9 +572,6 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="swiper-pagination">
-                        <!-- progressbar -->
-                    </div>
                 </div>
             </div>
             <!-- 비즈팩 끝-->
@@ -489,16 +601,130 @@
                         <span class="more">휴양지 패키지 더 보기<img src="./images/icon/arrow-14px.png" alt="#"></span></p>
                 </div>
             <div class="swiper vacation-swiper">
-                <div class="vacation-nav">
-                    <div class="swiper-pagination vacation-bar"><!-- progress --></div>
-                    <div class="vacation-btn">
-                        <div class="swiper-button-prev vacation-prev"></div>
-                        <div class="swiper-button-next vacation-next"></div>
+                <div class="swiper-pagination vacation-bar"><!-- progress --></div>
+                <div class="vacation-btn">
+                    <div class="swiper-button-next vacation-next">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_58_31" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                                <rect width="30" height="30" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_58_31)">
+                                <path d="M11.0701 5.24902L20.4934 14.624L11.0701 23.999L9.99341 22.9278L18.34 14.624L9.99341 6.32021L11.0701 5.24902Z" fill="#222222"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev vacation-prev">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_58_28" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                                <rect width="30" height="30" fill="#D9D9D9"/>
+                            </mask>
+                        <g mask="url(#mask0_58_28)">
+                            <path d="M19.4167 23.999L9.99341 14.624L19.4167 5.24902L20.4934 6.32021L12.1468 14.624L20.4934 22.9278L19.4167 23.999Z" fill="#222222"/>
+                        </g>
+                        </svg>
                     </div>
                 </div>
                 <div class="vacation-wrapper swiper-wrapper">
                     <!-- 1번 그룹슬라이드 -->
                     <ul class="swiper-slide group1">
+                        <li>
+                            <a href="#">
+                                <img src="./images/hanjin_product_Image/vacance/puket.jpg" alt="#">
+                                <div class="brand">
+                                    <span>아시아나항공</span>
+                                </div>
+                                <p class="name">푸켓 패키지 5일<br>
+                                [4성급호텔 | 룸업그레이드 | 마사지1시간 | 6대특식]</p>
+                                <p class="price"><em>399,000원 ~</em></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/hanjin_product_Image/vacance/ryokan.jpg" alt="">
+                                <div class="brand">
+                                    <span>대한항공</span>
+                                    <span>|</span>
+                                    <span>아시아나 항공</span>
+                                </div>
+                                <p class="name">오후출발, 여유있는 힐링온천트립 4일<br>
+                                [특급료칸 | 월드체인 힐튼 | 밤하늘의 스카이스파]</p>
+                                <p class="price"><em>3,140,400원 ~</em></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/hanjin_product_Image/vacance/waikiki.jpeg" alt="">
+                                <div class="brand">
+                                    <span>아시아나항공</span>
+                                </div>
+                                <p class="name">쉐라톤 와이키키 6박 7일<br>
+                                    [오션프론트 업그레이드 | 아동반값 | 하와이]
+                                <p class="price"><em>1,840,400원 ~</em></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/hanjin_product_Image/vacance/white-horse.jpeg" alt="">
+                                <div class="brand">
+                                    <span>진에어</span>
+                                </div>
+                                <p class="name">캐나다 밴쿠버 | 유콘 화이트호스 6일<br>
+                                [오로라 윈터드림 | 4인출발 | 귀국일 연장가능]</p>
+                                <p class="price"><em>1,070,900원 ~</em></p>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 2번 그룹슬라이드 -->
+                    <ul class="swiper-slide group2">
+                        <li>
+                            <a href="#">
+                                <img src="./images/hanjin_product_Image/vacance/puket.jpg" alt="#">
+                                <div class="brand">
+                                    <span>아시아나항공</span>
+                                </div>
+                                <p class="name">푸켓 패키지 5일<br>
+                                [4성급호텔 | 룸업그레이드 | 마사지1시간 | 6대특식]</p>
+                                <p class="price"><em>399,000원 ~</em></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/hanjin_product_Image/vacance/ryokan.jpg" alt="">
+                                <div class="brand">
+                                    <span>대한항공</span>
+                                    <span>|</span>
+                                    <span>아시아나 항공</span>
+                                </div>
+                                <p class="name">오후출발, 여유있는 힐링온천트립 4일<br>
+                                [특급료칸 | 월드체인 힐튼 | 밤하늘의 스카이스파]</p>
+                                <p class="price"><em>3,140,400원 ~</em></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/hanjin_product_Image/vacance/waikiki.jpeg" alt="">
+                                <div class="brand">
+                                    <span>아시아나항공</span>
+                                </div>
+                                <p class="name">쉐라톤 와이키키 6박 7일<br>
+                                    [오션프론트 업그레이드 | 아동반값 | 하와이]
+                                <p class="price"><em>1,840,400원 ~</em></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/hanjin_product_Image/vacance/white-horse.jpeg" alt="">
+                                <div class="brand">
+                                    <span>진에어</span>
+                                </div>
+                                <p class="name">캐나다 밴쿠버 | 유콘 화이트호스 6일<br>
+                                [오로라 윈터드림 | 4인출발 | 귀국일 연장가능]</p>
+                                <p class="price"><em>1,070,900원 ~</em></p>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 3번 그룹슬라이드 -->
+                    <ul class="swiper-slide group3">
                         <li>
                             <a href="#">
                                 <img src="./images/hanjin_product_Image/vacance/puket.jpg" alt="#">
