@@ -50,14 +50,14 @@
             }
         }
         .bnr-wrapper{
-            > .swiper-slide{
+            .bnr1{
                 &::after{
                         position: absolute;
                         content: '';
                         display: block;
                         width: 100%;
                         height: 100%;
-                        background: linear-gradient(90deg, $black 0%, transparent 50%);
+                        background: linear-gradient(90deg, rgba(0,0,0,0.7) 20%, transparent 55%);
                         left: 0;
                         top: 0;
                         z-index: 1;
@@ -108,6 +108,122 @@
                     }
                 }
             }
+            .bnr2{
+                &::after{
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(90deg, rgba(0,0,0,0.6) 20%, transparent 50%);
+                        left: 0;
+                        top: 0;
+                        z-index: 1;
+                    }   
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+                > a {
+                    
+                    > img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit:cover;
+                    }
+                    .bnr-title{
+                        padding: calc((670px - 123px)/2) 240px;
+                        z-index: 999;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 100%;
+                        > h1 {
+                            font-size: $size-40px;
+                            font-weight: $weight-semibold;
+                            margin-bottom: 10px;
+                            color: $white;
+                        }
+                        > p {
+                            color: $white; margin-bottom: 20px;
+                        }
+                        .detail {
+                            padding: 10px 20px;
+                            background-color: $blue;
+                            border-radius: 20px;
+                            width: fit-content;
+                            > span {
+                                color: $white;
+                                margin-right: 10px;
+                            }
+                            > img {
+                                width: 14px;
+                                height: 14px;
+                                transform: translateY(1px);
+                            }
+                        }
+                    }
+                }
+            }
+            .bnr3 {
+                &::after{
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(90deg, rgba(255,255,255, 0.75) 30%, transparent 70%);
+                        left: 0;
+                        top: 0;
+                        z-index: 1;
+                    }   
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+                > a {
+                    
+                    > img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit:cover;
+                    }
+                    .bnr-title{
+                        padding: calc((670px - 123px)/2) 240px;
+                        z-index: 999;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 100%;
+                        > h1 {
+                            font-size: $size-40px;
+                            font-weight: $weight-semibold;
+                            margin-bottom: 10px;
+                            color: $black;
+                        }
+                        > p {
+                            color: $black; margin-bottom: 20px;
+                        }
+                        .detail {
+                            padding: 10px 20px;
+                            background-color: $blue;
+                            border-radius: 20px;
+                            width: fit-content;
+                            > span {
+                                color: $white;
+                                margin-right: 10px;
+                            }
+                            > img {
+                                width: 14px;
+                                height: 14px;
+                                transform: translateY(1px);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     /* bnr 시작 */
@@ -123,10 +239,27 @@
                     font-size : $size-40px;
                     font-weight: $weight-semibold;
                     margin-bottom: 10px;
+                    > em {
+                        color: $blue;
+                        font-weight: $weight-semibold
+                    }
                 }
                 > p {
+                    @include flex-row-nowrap;
+                    justify-content: space-between;
+                    align-items: center;
                     .text{
                         line-height: $line-height-150;
+                    }
+                    .more{
+                        font-size: $size-13px;
+                        color: $gray7E;
+                        >img{
+                            width: 14px;
+                            height: 14px;
+                            rotate: 270deg;
+                            transform: translateX(-2.5px);
+                        }
                     }
                 }
             }
@@ -145,6 +278,13 @@
                         flex-flow: row;
                         justify-content: space-between;
                         align-items: center;
+                        > li:nth-child(2) {
+                            > a {
+                                > img {
+                                    object-position: -205px 0;
+                                }
+                            }
+                        }
                         > li{
                             > a {
                                 > img {
@@ -152,6 +292,7 @@
                                 height: 400px;
                                 border-radius: 100px;
                                 margin-bottom: 30px;
+                                object-fit: cover;
                                 }
                                 .brand{
                                     font-size : $size-14px;
@@ -215,6 +356,7 @@
                         align-items: center;
                         > a {
                             font-size: $size-13px;
+                            color: $gray7E;
                             img {
                                 width: 14px;
                                 height: 14px;
@@ -240,6 +382,13 @@
                         flex-flow: row;
                         justify-content: space-between;
                         align-items: center;
+                        > li:nth-child(4){
+                            > a {
+                                > img {
+                                    object-position: -160px 0;
+                                }
+                            }
+                        }
                         > li{
                             > a {
                                 > img {
@@ -247,6 +396,7 @@
                                 height: 400px;
                                 border-radius: 100px;
                                 margin-bottom: 30px;
+                                object-fit: cover;
                                 }
                                 .brand{
                                     font-size : $size-14px;
@@ -304,6 +454,7 @@
                 > a {
                     .more {
                         font-size: $size-13px;
+                        color: $gray7E;
                     }
                     img {
                         width: 14px;
@@ -398,5 +549,462 @@
         }
     }
     /* kalpak 끝 */
+
+    /* vacation 시작 */
+    .vacation{
+        margin: 0 240px 150px;
+        .vacation-title {
+            margin-bottom: 50px;
+            .title {
+                font-size : $size-40px;
+                font-weight: $weight-semibold;
+                margin-bottom: 10px;
+                > em {
+                    font-weight: $weight-semibold;
+                    color: $blue;
+                }
+            }
+            > p {
+                @include flex-row-nowrap;
+                justify-content: space-between;
+                align-items: center;
+                .text{
+                    line-height: $line-height-150;
+                }
+                .more{
+                    font-size: $size-13px;
+                    color: $gray7E;
+                    >img{
+                        width: 14px;
+                        height: 14px;
+                        rotate: 270deg;
+                        transform: translateX(-2.5px);
+                    }
+                }
+            }
+        }
+        .vacation-swiper{
+            width: 100%;
+            .vacation-nav {
+
+            }
+            .vacation-btn {
+                .vacation-prev{}
+                .vacation-next{}
+            }
+            .vacation-wrapper{
+                .group1 {
+                    display: flex;
+                    flex-flow: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    > li{
+                        > a {
+                            > img {
+                            width: 340px;
+                            height: 400px;
+                            border-radius: 100px;
+                            margin-bottom: 30px;
+                            object-fit: cover;
+                            }
+                            .brand{
+                                font-size : $size-14px;
+                                line-height: $line-height-150;
+                                margin-bottom: 10px;
+                            }
+                            .name {
+                                font-size : $size-14px;
+                                line-height: $line-height-150;
+                                font-weight: $weight-medium;
+                                margin-bottom: 10px;
+                            }
+                            .price {
+                                > em {
+                                    font-size : $size-22px;
+                                    line-height: $line-height-150;
+                                    font-weight: $weight-semibold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* vacation 끝 */
+
+    /* 홈쇼핑 시작 */
+    .onair{
+        margin: 0 240px 150px;
+        .title{
+            @include flex-row-nowrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 50px;
+            > h1 {
+                font-size: $size-40px;
+                font-weight: $weight-semibold;
+                > em {
+                    font-weight: $weight-semibold;
+                    color: $blue;
+                }
+            }
+            > a {
+                .more {
+                    font-size: $size-13px;
+                    color: $gray7E;
+                }
+                img {
+                    width: 14px;
+                    height: 14px;
+                    rotate: 270deg;
+                    transform: translateX(-2.5px);
+                }
+            }
+        }
+        .onair-content {
+            .onair-row1 {
+                @include flex-row-nowrap;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                margin-bottom: 20px;
+
+                /* onair 이미지 삽입 시작 */
+                .box1 {
+                    background-image: url(../images/hanjin_product_Image/on_air/puket.jpg);
+                    background-position: center -140px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    &::after{
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        position: absolute;
+                        left: 0px;
+                        top : 2px;
+                        background: linear-gradient(transparent 50%, rgba(255,255,255,0.8) 80%);
+                        z-index: 300;
+                    }
+                    > a {
+                        .box-title {
+                            .name {
+                                color: $black !important;
+                            }
+                            p {
+                                color: $black !important;
+                            }
+                        }
+                    }
+                }
+                .box2 {
+                    background-image: url(../images/hanjin_product_Image/on_air/aomoriya.jpg);
+                    background-position: center -140px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    &::after{
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        position: absolute;
+                        left: 0px;
+                        top : 2px;
+                        background: linear-gradient(transparent 50%, rgba(0,0,0,0.8) 80%);
+                        z-index: 300;
+                    }
+                }
+                /* onair 이미지 삽입 끝 */
+
+                .onair-box {
+                    z-index: 1;
+                    position: relative; 
+                    border: 1px solid #A7D0FF;
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 300px;
+                    @include flex-row-nowrap;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                    transition: background-position 0.25s;
+                    overflow: hidden;
+                    &:hover {
+                        background-position: -80px -140px;
+                        transition: background-position 0.25s;
+                        > a {
+                            .more {
+                                transition: width 0.25s;
+                                width: 150px;
+                                > p {
+                                    > span {
+                                        opacity : 1;
+                                        transition : opacity 0.25s;
+                                        margin-right: 6px;
+                                    }
+                                    > img {
+                                        opacity : 1;
+                                        transition : opacity 0.25s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    > a {
+                        position: relative;
+                        z-index: 999;
+                        width: 100%;
+                        height: 300px;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 20px 0px 20px 30px;
+                        .more {
+                            @include flex-row-nowrap;
+                            justify-content: center;
+                            align-items: center;
+                            width: 0px;
+                            height: 300px;
+                            background-color: $white;
+                            transition: width 0.25s;
+                            > p {
+                                @include flex-row-nowrap;
+                                justify-content: center;
+                                align-items: center;
+
+                                > span {
+                                    line-height: $line-height-150;
+                                    opacity: 0;
+                                    transition : opacity 0.1s;
+                                }
+                                > img {
+                                    width: 14px;
+                                    height: 14px;
+                                    transform: translateX(1px);
+                                    opacity: 0;
+                                    rotate: 270deg;
+                                    transition : opacity 0.1s;
+                                }
+                            }
+                        }
+                    
+                        .box-title{
+                            width: 100%;
+                            height: 100%;
+                            @include flex-col-nowrap;
+                            justify-content : flex-end;
+                            align-items: flex-start;
+                            .name {
+                                color: $white;
+                                font-size: $size-24px;
+                                font-weight: $weight-medium;
+                                line-height: $line-height-150;
+                            }
+                            > p {
+                                color: $white;
+                                font-size: $size-14px;
+                                line-height: $line-height-150;
+                            }
+                        }
+                    }
+                }
+            }
+            .onair-row2 {
+                @include flex-row-nowrap;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+
+                /* onair 이미지 삽입 시작 */
+                .box3 {
+                    background-image: url(../images/hanjin_product_Image/on_air/Portugal.jpg);
+                    background-position: center -140px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    &::after{
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        position: absolute;
+                        left: 0px;
+                        top : 2px;
+                        background: linear-gradient(transparent 50%, rgba(0,0,0,0.8) 80%);
+                        z-index: 300;
+                    }
+                }
+                .box4 {
+                    background-image: url(../images/hanjin_product_Image/on_air/taibei.jpeg);
+                    background-position: center -140px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    &::after{
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        position: absolute;
+                        left: 0px;
+                        top : 2px;
+                        background: linear-gradient(transparent 50%, rgba(0,0,0,0.8) 80%);
+                        z-index: 300;
+                    }
+                }
+                /* onair 이미지 삽입 끝 */
+
+                .onair-box {
+                    z-index: 1;
+                    position: relative; 
+                    border: 1px solid #A7D0FF;
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 300px;
+                    @include flex-row-nowrap;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                    transition: background-position 0.25s;
+                    overflow: hidden;
+                    &:hover {
+                        background-position: -80px -140px;
+                        transition: background-position 0.25s;
+                        > a {
+                            .more {
+                                transition: width 0.25s;
+                                width: 150px;
+                                > p {
+                                    > span {
+                                        opacity : 1;
+                                        transition : opacity 0.25s;
+                                        margin-right: 6px;
+                                    }
+                                    > img {
+                                        opacity : 1;
+                                        transition : opacity 0.25s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    > a {
+                        position: relative;
+                        z-index: 999;
+                        width: 100%;
+                        height: 300px;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 20px 0px 20px 30px;
+                        .more {
+                            @include flex-row-nowrap;
+                            justify-content: center;
+                            align-items: center;
+                            width: 0px;
+                            height: 300px;
+                            background-color: $white;
+                            transition: width 0.25s;
+                            > p {
+                                @include flex-row-nowrap;
+                                justify-content: center;
+                                align-items: center;
+
+                                > span {
+                                    line-height: $line-height-150;
+                                    opacity: 0;
+                                    transition : opacity 0.1s;
+                                }
+                                > img {
+                                    width: 14px;
+                                    height: 14px;
+                                    transform: translateX(1px);
+                                    opacity: 0;
+                                    rotate: 270deg;
+                                    transition : opacity 0.1s;
+                                }
+                            }
+                        }
+                    
+                        .box-title{
+                            width: 100%;
+                            height: 100%;
+                            @include flex-col-nowrap;
+                            justify-content : flex-end;
+                            align-items: flex-start;
+                            .name {
+                                color: $white;
+                                font-size: $size-24px;
+                                font-weight: $weight-medium;
+                                line-height: $line-height-150;
+                            }
+                            > p {
+                                color: $white;
+                                font-size: $size-14px;
+                                line-height: $line-height-150;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* 홈쇼핑 끝 */
+
+    /* benefit 시작 */
+
+    .benefit{
+        margin: 0 240px 150px;
+        .title{
+            @include flex-row-nowrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 50px ;
+            > h1 {
+                font-size : $size-40px;
+                font-weight: $weight-semibold;
+                margin-bottom: 10px;
+            }
+            > a {
+                .more {
+                    font-size: $size-13px;
+                    color: $gray7E;
+                }
+                img {
+                    width: 14px;
+                    height: 14px;
+                    rotate: 270deg;
+                    transform: translateX(-2.5px);
+                }
+            }
+        }
+        .benefit-swiper {
+            width: 100%;
+            .benefit-wrapper {
+                >.benefit-slide {
+                    @include flex-row-nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    .benefit-con{
+                        width: 350px;
+                        height: 450px;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        > a {
+                            width: 100%;
+                            height: 100%;
+                            >img {
+                                object-fit: cover;
+                                width: 350px;
+                                height: 450px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* benefit 끝 */
+
     /* main-contents 끝 */
 }
