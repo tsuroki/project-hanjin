@@ -11,9 +11,7 @@ const topNoticeSwiper = new Swiper ('.notice-swiper', {
 
 const bnrSwiper = new Swiper ('.main-bnr', {
     loop : true,
-    autoplay : {
-        delay : 5000,
-    },
+    autoplay : false,
     pagination : {
         el: '.bnr-nav',
         type : 'fraction',
@@ -21,7 +19,11 @@ const bnrSwiper = new Swiper ('.main-bnr', {
     navigation : {
         prevEl : '.bnr-prev',
         nextEl : '.bnr-next',
-    }
+    },
+    768: {
+    slidesPerView: 1,
+    spaceBetween: 20
+    },
 })
 
 const specialSwiper = new Swiper ('.special-swiper', {
@@ -34,7 +36,12 @@ const specialSwiper = new Swiper ('.special-swiper', {
     navigation : {
         prevEl : '.special-prev',
         nextEl : '.special-next',
-    }
+    },
+    spaceBetween: -25,
+    768: {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    },
 })
 
 const themeSwiper = new Swiper ('.theme-swiper', {
@@ -47,7 +54,12 @@ const themeSwiper = new Swiper ('.theme-swiper', {
     navigation : {
         prevEl : '.theme-prev',
         nextEl : '.theme-next',
-    }
+    },
+    spaceBetween: -25,
+    768: {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    },
 })
 
 const bizSwiper = new Swiper ('.bizpack-swiper', {
