@@ -11,7 +11,9 @@ const topNoticeSwiper = new Swiper ('.notice-swiper', {
 
 const bnrSwiper = new Swiper ('.main-bnr', {
     loop : true,
-    autoplay : false,
+    autoplay : {
+        delay : 6000,
+    },
     pagination : {
         el: '.bnr-nav',
         type : 'fraction',
