@@ -85,7 +85,12 @@ const vacaSwiper = new Swiper ('.vacation-swiper', {
     navigation : {
         prevEl : '.vacation-prev',
         nextEl : '.vacation-next',
-    }
+    },
+    spaceBetween : -25,
+    768: {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    },
 })
 
 const searchIcon = document.querySelector('.search')

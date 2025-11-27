@@ -1832,6 +1832,9 @@ body{
                                             font-weight: $weight-medium;
                                             margin-bottom: 10px;
                                         }
+                                        .price {
+                                            > em {font-size: $size-16px;}
+                                        }
                                     }
                                 }
                                 > li:nth-child(2) {
@@ -1937,11 +1940,7 @@ body{
                                             margin-bottom: 10px;
                                         }
                                         .price {
-                                            > em {
-                                                font-size : $size-22px;
-                                                line-height: $line-height-150;
-                                                font-weight: $weight-semibold;
-                                            }
+                                            > em {font-size: $size-16px;}
                                         }
                                     }
                                 }
@@ -1968,6 +1967,9 @@ body{
                                             font-weight: $weight-medium;
                                             margin-bottom: 10px;
                                         }
+                                        .price {
+                                        > em {font-size: $size-16px;}
+                                    }
                                     }
                                 }
                                 > li:nth-child(2) {
@@ -2039,7 +2041,7 @@ body{
                                                     white-space: nowrap;
                                                 }
                                                 .price {
-                                                    font-size: $size-16px;
+                                                    > em {font-size: $size-16px;}
                                                 }
                                             }
                                         }
@@ -2084,6 +2086,59 @@ body{
                         .text {font-size : $size-14px;}
                         .more {
                             display: none;
+                        }
+                    }
+                }
+                .vacation-swiper{
+                    overflow: visible;
+                    padding-bottom: 0;
+                    .vacation-bar {display: none;}
+                    .vacation-btn {
+                        .vacation-prev{
+                            display: none;
+                        }
+                        .vacation-next{
+                            display: none;
+                        }
+                    }
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            width: fit-content;
+                            justify-content: flex-start;
+                            > li {
+                                margin-right: 20px;
+                                > a {
+                                    > img {
+                                        width : 190px;
+                                        height: 225px;
+                                        border-radius: 70px;
+                                    }
+                                    .brand{
+                                        font-size: $size-12px;
+                                    }
+                                    .name {
+                                        font-size : $size-14px;
+                                        line-height: $line-height-150;
+                                        font-weight: $weight-medium;
+                                        margin-bottom: 10px;
+                                    }
+                                    .price {
+                                        > em {font-size: $size-16px;}
+                                    }
+
+                                }
+                            }
+                            > li:nth-child(2) {
+                                > a {
+                                    > img {
+                                        object-position: center;
+                                    }
+                                }
+                            }
+                            > li:nth-child(3),
+                            > li:nth-child(4){
+                                display: none;
+                            }
                         }
                     }
                 }
