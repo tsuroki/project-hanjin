@@ -37,7 +37,6 @@ const specialSwiper = new Swiper ('.special-swiper', {
         prevEl : '.special-prev',
         nextEl : '.special-next',
     },
-    spaceBetween: -25,
     768: {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -55,7 +54,6 @@ const themeSwiper = new Swiper ('.theme-swiper', {
         prevEl : '.theme-prev',
         nextEl : '.theme-next',
     },
-    spaceBetween: -25,
     768: {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -86,7 +84,6 @@ const vacaSwiper = new Swiper ('.vacation-swiper', {
         prevEl : '.vacation-prev',
         nextEl : '.vacation-next',
     },
-    spaceBetween : -25,
     768: {
     slidesPerView: 1,
     spaceBetween: 0,
