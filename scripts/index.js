@@ -25,8 +25,20 @@ const bnrSwiper = new Swiper ('.main-bnr', {
 })
 
 const specialSwiper = new Swiper ('.special-swiper', {
+    slidesPerView: 2.1,
+    slidesPerGroup : 2,
+    spaceBetween: 0,
     loop : false,
     autoplay : false,
+    breakpoints : {
+        // 768px '이상'일 때 적용될 설정
+        768: {
+            slidesPerView: 4, // 데스크톱 설정
+            slidesPerGroup : 4,
+            centeredSlides: false, // 필요에 따라 변경
+            spaceBetween: 0, // 필요에 따라 변경
+        },
+    },
     pagination : {
         el: '.special-bar',
         type : 'progressbar',
@@ -35,18 +47,23 @@ const specialSwiper = new Swiper ('.special-swiper', {
         prevEl : '.special-prev',
         nextEl : '.special-next',
     },
-    breakpoints : {
-        768: {
-        spaceBetween : -25,
-        slidesPerView: 1,
-        spaceBetween: 0,
-        },
-    }
 })
 
 const themeSwiper = new Swiper ('.theme-swiper', {
+    slidesPerView: 2.1,
+    slidesPerGroup : 2,
+    spaceBetween: 0,
     loop : false,
     autoplay : false,
+    breakpoints : {
+        // 768px '이상'일 때 적용될 설정
+        768: {
+            slidesPerView: 4, // 데스크톱 설정
+            slidesPerGroup : 4,
+            centeredSlides: false, // 필요에 따라 변경
+            spaceBetween: 0, // 필요에 따라 변경
+        },
+    },
     pagination : {
         el: '.theme-bar',
         type : 'progressbar',
@@ -55,38 +72,23 @@ const themeSwiper = new Swiper ('.theme-swiper', {
         prevEl : '.theme-prev',
         nextEl : '.theme-next',
     },
-    breakpoints : {
-        768: {
-        spaceBetween : -25,
-        slidesPerView: 1,
-        spaceBetween: 0,
-        },
-    }
-})
-
-const bizSwiper = new Swiper ('.bizpack-swiper', {
-    loop : false,
-    autoplay : false,
-    pagination : {
-        el: '.bizpack-bar',
-        type : 'progressbar',
-    },
-    navigation : {
-        prevEl : '.bizpack-prev',
-        nextEl : '.bizpack-next',
-    },
-    breakpoints : {
-        768: {
-        spaceBetween : -25,
-        slidesPerView: 1,
-        spaceBetween: 0,
-        },
-    }
 })
 
 const vacaSwiper = new Swiper ('.vacation-swiper', {
+    slidesPerView: 2.1,
+    slidesPerGroup : 2,
+    spaceBetween: 0,
     loop : false,
     autoplay : false,
+    breakpoints : {
+        // 768px '이상'일 때 적용될 설정
+        768: {
+            slidesPerView: 4, // 데스크톱 설정
+            slidesPerGroup : 4,
+            centeredSlides: false, // 필요에 따라 변경
+            spaceBetween: 0, // 필요에 따라 변경
+        },
+    },
     pagination : {
         el: '.vacation-bar',
         type : 'progressbar',
@@ -95,13 +97,6 @@ const vacaSwiper = new Swiper ('.vacation-swiper', {
         prevEl : '.vacation-prev',
         nextEl : '.vacation-next',
     },
-    breakpoints : {
-        768: {
-        spaceBetween : -25,
-        slidesPerView: 1,
-        spaceBetween: 0,
-        },
-    }
 })
 
 const beneSwiper = new Swiper ('.benefit-swiper', {
