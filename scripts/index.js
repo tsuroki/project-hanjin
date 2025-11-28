@@ -21,11 +21,7 @@ const bnrSwiper = new Swiper ('.main-bnr', {
     navigation : {
         prevEl : '.bnr-prev',
         nextEl : '.bnr-next',
-    },
-    768: {
-    slidesPerView: 1,
-    spaceBetween: 20
-    },
+    }
 })
 
 const specialSwiper = new Swiper ('.special-swiper', {
@@ -39,10 +35,13 @@ const specialSwiper = new Swiper ('.special-swiper', {
         prevEl : '.special-prev',
         nextEl : '.special-next',
     },
-    768: {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    },
+    breakpoints : {
+        768: {
+        spaceBetween : -25,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        },
+    }
 })
 
 const themeSwiper = new Swiper ('.theme-swiper', {
@@ -56,10 +55,13 @@ const themeSwiper = new Swiper ('.theme-swiper', {
         prevEl : '.theme-prev',
         nextEl : '.theme-next',
     },
-    768: {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    },
+    breakpoints : {
+        768: {
+        spaceBetween : -25,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        },
+    }
 })
 
 const bizSwiper = new Swiper ('.bizpack-swiper', {
@@ -72,6 +74,13 @@ const bizSwiper = new Swiper ('.bizpack-swiper', {
     navigation : {
         prevEl : '.bizpack-prev',
         nextEl : '.bizpack-next',
+    },
+    breakpoints : {
+        768: {
+        spaceBetween : -25,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        },
     }
 })
 
@@ -86,9 +95,28 @@ const vacaSwiper = new Swiper ('.vacation-swiper', {
         prevEl : '.vacation-prev',
         nextEl : '.vacation-next',
     },
-    768: {
-    slidesPerView: 1,
+    breakpoints : {
+        768: {
+        spaceBetween : -25,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        },
+    }
+})
+
+const beneSwiper = new Swiper ('.benefit-swiper', {
+    slidesPerView: 2.3,
     spaceBetween: 0,
+    loop : true,
+    autoplay : false,
+    
+    breakpoints : {
+        // 768px '이상'일 때 적용될 설정
+        768: {
+            slidesPerView: 4, // 데스크톱 설정
+            centeredSlides: false, // 필요에 따라 변경
+            spaceBetween: 0, // 필요에 따라 변경
+        },
     },
 })
 

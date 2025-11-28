@@ -1367,27 +1367,24 @@ body #wrap .benefit .title > a img {
 }
 body #wrap .benefit .benefit-swiper {
   width: 100%;
-}
-body #wrap .benefit .benefit-swiper .benefit-wrapper > .benefit-slide {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-body #wrap .benefit .benefit-swiper .benefit-wrapper > .benefit-slide .benefit-con {
-  width: 350px;
   height: 450px;
-  border-radius: 20px;
+}
+body #wrap .benefit .benefit-swiper .benefit-wrapper {
+  justify-content: space-between;
+}
+body #wrap .benefit .benefit-swiper .benefit-wrapper > .swiper-slide {
   overflow: hidden;
 }
-body #wrap .benefit .benefit-swiper .benefit-wrapper > .benefit-slide .benefit-con > a {
+body #wrap .benefit .benefit-swiper .benefit-wrapper > .swiper-slide > a {
   width: 100%;
   height: 100%;
 }
-body #wrap .benefit .benefit-swiper .benefit-wrapper > .benefit-slide .benefit-con > a > img {
-  object-fit: cover;
+body #wrap .benefit .benefit-swiper .benefit-wrapper > .swiper-slide > a > img {
+  object-fit: fill;
+  object-position: center;
   width: 350px;
   height: 450px;
+  border-radius: 20px;
 }
 body #wrap {
   /* benefit 끝 */
@@ -1526,7 +1523,7 @@ body #footer .footer-right .select-group #family-site {
   padding: 10px 30px;
 }
 body #footer .footer-right .select-group #family-site > h1 {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #222222;
 }
 body #footer .footer-right .select-group #family-site > img {
@@ -2026,6 +2023,152 @@ body #footer .footer-right .copyright {
   }
   body #wrap {
     /* vacation 끝 */
+    /* on-air 시작 */
+  }
+  body #wrap .onair {
+    margin: 0 20px 60px;
+  }
+  body #wrap .onair .title > h1 {
+    font-size: 1.75rem;
+  }
+  body #wrap .onair .title {
+    margin-bottom: 30px;
+  }
+  body #wrap .onair .onair-content .onair-row1 {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    /* 이미지 조정 */
+  }
+  body #wrap .onair .onair-content .onair-row1 .box1 {
+    background-position: center 0;
+  }
+  body #wrap .onair .onair-content .onair-row1 .box2 {
+    background-position: center 0;
+  }
+  body #wrap .onair .onair-content .onair-row1 {
+    /* 이미지 조정 */
+  }
+  body #wrap .onair .onair-content .onair-row1 .onair-box {
+    height: 200px;
+  }
+  body #wrap .onair .onair-content .onair-row1 .onair-box:hover {
+    background-position: -80px 0;
+  }
+  body #wrap .onair .onair-content .onair-row1 .onair-box:hover > a .more {
+    width: 120px;
+  }
+  body #wrap .onair .onair-content .onair-row1 .onair-box > a {
+    height: 200px;
+  }
+  body #wrap .onair .onair-content .onair-row1 .onair-box > a .more {
+    height: 200px;
+  }
+  body #wrap .onair .onair-content .onair-row1 .onair-box > a .box-title .name {
+    font-size: 1.25rem;
+  }
+  body #wrap .onair .onair-content .onair-row1 .onair-box > a .box-title > p {
+    font-size: 0.75rem;
+  }
+  body #wrap .onair .onair-content .onair-row2 {
+    display: none;
+  }
+  body #wrap {
+    /* on-air 끝 */
+    /* benefit 시작 */
+  }
+  body #wrap .benefit {
+    margin: 0 20px 60px;
+  }
+  body #wrap .benefit .title {
+    margin-bottom: 30px;
+  }
+  body #wrap .benefit .title > h1 {
+    font-size: 1.75rem;
+  }
+  body #wrap .benefit .title > a {
+    display: none;
+  }
+  body #wrap .benefit .benefit-swiper {
+    height: 230px;
+  }
+  body #wrap .benefit .benefit-swiper .benefit-wrapper > .swiper-slide > a {
+    width: 100%;
+    height: 100%;
+  }
+  body #wrap .benefit .benefit-swiper .benefit-wrapper > .swiper-slide > a > img {
+    width: 180px;
+    height: 230px;
+  }
+  body #wrap {
+    /* benefit 끝 */
+  }
+  body .footer-line .footer-notice {
+    font-size: 0.75rem;
+  }
+  body .footer-line .hr {
+    width: 1px;
+    height: 12px;
+    background-color: #ffffff;
+  }
+  body .footer-line .footer-swiper .footer-wrapper > .swiper-slide {
+    font-size: 0.75rem;
+  }
+  body #footer {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 50px 20px;
+    gap: 30px;
+  }
+  body #footer .footer-left .footer-lnb > li > a {
+    line-height: 0.75rem;
+    font-size: 0.625rem;
+  }
+  body #footer .footer-left .footer-lnb .hr {
+    height: 12px;
+  }
+  body #footer .footer-left .footer-as .footer-as-info .reservation-as {
+    font-size: 1rem;
+  }
+  body #footer .footer-left .footer-as .footer-as-info .kalpak-as {
+    font-size: 1rem;
+  }
+  body #footer .footer-left .footer-as .footer-as-info .other-as {
+    font-size: 0.875rem;
+  }
+  body #footer .footer-left .footer-as .as-time p {
+    font-size: 0.75rem;
+  }
+  body #footer .footer-right {
+    align-items: flex-start;
+  }
+  body #footer .footer-right .footer-sns > li > a > img {
+    width: 20px;
+    height: 20px;
+  }
+  body #footer .footer-right .select-group #family-site > h1 {
+    font-size: 0.625rem;
+  }
+  body #footer .footer-right .select-group #family-site > img {
+    width: 12px;
+    height: 12px;
+    transform: translateY(0px);
+  }
+  body #footer .footer-right .select-group #language > h1 {
+    font-size: 0.625rem;
+  }
+  body #footer .footer-right .select-group #language > img {
+    width: 12px;
+    height: 12px;
+    transform: translateY(0px);
+  }
+  body #footer .footer-right .company-info > p {
+    font-size: 0.625rem;
+  }
+  body #footer .footer-right .copyright > p {
+    font-size: 0.625rem;
   }
 }
 
