@@ -153,3 +153,23 @@ for(let i of themeList){
         e.preventDefault()
     })
 }
+
+const famsite = document.querySelector('#family-site')
+const famlist = document.querySelector('.site-list')
+famsite.addEventListener('click', (e) => {
+    e.preventDefault()
+    famlist.style.display = "block"
+})
+famlist.addEventListener('mouseleave', () => {
+    famlist.style.display = "none"
+})
+
+const lanBox = document.querySelector('#language')
+const lanList = document.querySelector('.lan-list')
+lanBox.addEventListener('click', (e) => {
+    e.preventDefault()
+    lanList.style.display = "block"
+})
+lanList.addEventListener('mouseleave', () => {
+    lanList.style.display = "none"
+})
